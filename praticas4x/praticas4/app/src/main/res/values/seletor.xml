@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="seletor_array">
+        <item>Seletor de conteúdos matemáticos</item>
+        <item>Teorema de Pitagoras</item>
+        <item>Área do quadrado</item>
+        <item>Seno, Cosseno, Tangente</item>
+        <item>Perimetro quadrado</item>
+        <item>Porcentagem</item>
+        <item>Proporcao</item>
+        <item>PA</item>
+        <item>PG</item>
+
+    </string-array>
+</resources>
