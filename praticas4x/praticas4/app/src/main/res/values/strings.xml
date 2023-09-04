@@ -62,7 +62,7 @@
     <string name="editTextNmenosUm">(n-1)</string>
     <string name="editTextR">r</string>
     <string name="btnCalcularPA">Calcular An</string>
-    <string name="textViewResultadoAn">Resultado: an: </string>
+    <string name="textViewResultadoAn">Resultado: an </string>
     <string name="textViewResultadoA1">Resultado: a1:</string>
     <string name="textViewResultadoNmenosUm">Resultado: (n-1):</string>
     <string name="textViewResultadoR">Resultado: r:</string>
