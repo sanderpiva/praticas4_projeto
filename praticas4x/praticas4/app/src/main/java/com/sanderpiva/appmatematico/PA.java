@@ -60,7 +60,7 @@ public class PA extends AppCompatActivity {
                     Snackbar.make(view, "Preencha todos os dados", Snackbar.LENGTH_LONG).show();
                 }else{
                     ProcessaPA pa = new ProcessaPA(resA1, resNmenosUm, resR);
-                    resultadoAn.setText("an= a1+(n-1)*r =>"+resA1+"+"+resNmenosUm+"*"+resR+" = "+
+                    resultadoAn.setText("an = a1+(n-1)*r =>"+resA1+"+"+resNmenosUm+"*"+resR+" = "+
                             pa.getResA1()+" + "+
                             pa.getResNmenosUm()*pa.getResR()+" = "+pa.calculaAn());
                 }

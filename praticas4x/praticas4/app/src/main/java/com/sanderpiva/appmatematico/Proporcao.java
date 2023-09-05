@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import java.text.DecimalFormat;
+
 public class Proporcao extends AppCompatActivity {
 
     private android.widget.EditText a, b, c;

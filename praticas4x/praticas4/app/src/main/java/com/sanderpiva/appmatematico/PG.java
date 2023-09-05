@@ -59,8 +59,8 @@ public class PG extends AppCompatActivity {
                     Snackbar.make(view, "Preencha todos os dados", Snackbar.LENGTH_LONG).show();
                 }else{
                     ProcessaPG pg = new ProcessaPG(resA1, resNmenosUm, resQ);
-                    resultadoAn.setText("an= a1*q ^ (n-1) ="+
-                            pg.getResA1()+" + "+pg.getResQ()+" ^ "+
+                    resultadoAn.setText("an = a1*q ^ (n-1) = "+
+                            pg.getResA1()+" * "+pg.getResQ()+" ^ "+
                             pg.getResNmenosUm()+" = "+
                             pg.getResA1()+" * "+ Math.pow(pg.getResQ(), pg.getResNmenosUm()) +" = "+
                             pg.calculaAn());

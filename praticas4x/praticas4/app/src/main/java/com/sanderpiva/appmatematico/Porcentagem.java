@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import java.text.DecimalFormat;
+
 public class Porcentagem extends AppCompatActivity {
 
     //private Button btnPDF;
@@ -78,7 +80,6 @@ public class Porcentagem extends AppCompatActivity {
                                 " ("+p.getValor1() +"*" +p.getValor2()+")"+"/ 100"+" = "
                                 +p.getValor1()+" "+" "+p.op()+" "+"("+res+")"+"/ 100"+" = "+
                                 p.getValor1()+" "+p.op()+" "+res2+" ="+p.calculaPorcentagem());
-
                     }
                 }
             }
