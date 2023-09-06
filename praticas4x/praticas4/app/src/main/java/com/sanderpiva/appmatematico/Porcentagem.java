@@ -76,10 +76,22 @@ public class Porcentagem extends AppCompatActivity {
                         Snackbar.make(layoutPorcentagem, "Verifique se o sinal do seu operador foi digitado corretamente", Snackbar.LENGTH_SHORT).show();
 
                     }else{
-                        resultado.setText("Resolucao: "+p.getValor1()+" "+" "+p.op()+
+                        /*resultado.setText("Resolucao: "+p.getValor1()+" "+" "+p.op()+
                                 " ("+p.getValor1() +"*" +p.getValor2()+")"+"/ 100"+" = "
                                 +p.getValor1()+" "+" "+p.op()+" "+"("+res+")"+"/ 100"+" = "+
-                                p.getValor1()+" "+p.op()+" "+res2+" ="+p.calculaPorcentagem());
+                                p.getValor1()+" "+p.op()+" "+res2+" = "+p.calculaPorcentagem());*/
+
+
+                        if(p.op().equals("+")){
+                            double resul1= 1+(p.getValor2()/100);
+                            resultado.setText("Resolucao: "+p.getValor1()+" * "+"(1 +"+(p.getValor2()/100)+")"+" = "+
+                                    p.getValor1()+" + "+resul1+" = "+p.calculaPorcentagem());
+                        }else{
+                            double resul2=1-(p.getValor2()/100);
+                            resultado.setText("Resolucao: "+p.getValor1()+" * "+"(1 -"+(p.getValor2()/100)+")"+" = "+
+                                    p.getValor1()+" - "+resul2+" = "+p.calculaPorcentagem());
+                        }
+
                     }
                 }
             }

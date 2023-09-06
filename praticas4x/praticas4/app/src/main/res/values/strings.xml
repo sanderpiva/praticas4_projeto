@@ -51,7 +51,7 @@
     <string name="boasVindas">EXPERIMENTE NOSSOS CONTEÚDOS</string>
     <string name="pratiqueSenoCossenoTangente">Pratique seno cosseno tangente: Insira co, cad e hip</string>
     <string name="materialApoio">Material Apoio</string>
-    <string name="pa">Progressao Aritmética PA: sequencia numerica em que cada termo, a partir do segundo, é igual ao anterior somado com um numero fixo, chamado razão ou r </string>
+    <string name="pa">Progressao Aritmética PA: Sequência numérica em que cada termo, a partir do segundo, é igual ao anterior somado com um número fixo, chamado razão ou r </string>
     <string name="textViewAn">an: termo geral</string>
     <string name="textViewA1">a1: primeiro termo</string>
     <string name="textViewN">n: número de termos</string>

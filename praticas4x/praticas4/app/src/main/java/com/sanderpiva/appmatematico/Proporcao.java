@@ -62,9 +62,15 @@ public class Proporcao extends AppCompatActivity {
                     Snackbar.make(layoutProporcao, "Preencha todos os dados", Snackbar.LENGTH_SHORT).show();
                 }else{
                     ProcessaProporcao p = new ProcessaProporcao(resA, resB, resC);
-                    resultado.setText(String.valueOf(p.calculaProporcao()));
-                    desc.setText("C: "+"("+p.getV3()+") "+"*"+"B: "+"("+p.getV2()+")"+"/"+"A: "+"("+p.getV1()+")"+"= "
-                    +(p.getV3()*p.getV2())+" / "+p.getV1()+" = "+p.calculaProporcao());
+                    //resultado.setText(String.valueOf(p.calculaProporcao()));
+                    resultado.setText(String.format("%.2f", p.calculaProporcao()));
+                    /*desc.setText("C: "+"("+p.getV3()+") "+"*"+"B: "+"("+p.getV2()+")"+"/"+"A: "+"("+p.getV1()+")"+"= "
+                    +(p.getV3()*p.getV2())+" / "+p.getV1()+" = "+p.calculaProporcao());*/
+                    desc.setText(String.format("C: (%.2f) * B: (%.2f) / A: (%.2f) = %.2f / %.2f = %.2f",
+                            p.getV3(), p.getV2(), p.getV1(),
+                            p.getV3() * p.getV2(), p.getV1(),
+                            p.calculaProporcao()));
+
                 }
             }
         });
