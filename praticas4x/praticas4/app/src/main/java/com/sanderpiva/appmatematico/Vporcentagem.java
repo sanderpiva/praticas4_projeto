@@ -17,7 +17,7 @@ public class Vporcentagem extends AppCompatActivity {
 
         WebView webView = findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
-        String url = "https://www.youtube.com/watch?v=PGPRh4JBIsg&list=PLqSrxnZNkzto-OybRF9TljDg3W0y2J0zH";
+        String url = "https://www.youtube.com/watch?v=OjOyNmTt7Mw&list=PLCXV5OW8ZZO_hQk5mzQnkGcuwvfVRpf94";
         webView.loadUrl(url);
 
         webView.setWebViewClient(new WebViewClient() {

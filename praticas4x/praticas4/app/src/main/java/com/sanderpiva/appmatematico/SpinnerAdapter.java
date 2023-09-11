@@ -53,19 +53,19 @@ public class SpinnerAdapter extends ArrayAdapter<String> implements AdapterView.
                 mContext.startActivity(intent4);
                 break;
             case 5:
-                Intent intent5 = new Intent(mContext, Porcentagem.class);
+                Intent intent5 = new Intent(mContext, PA.class);
                 mContext.startActivity(intent5);
                 break;
             case 6:
-                Intent intent6 = new Intent(mContext, Proporcao.class);
+                Intent intent6 = new Intent(mContext, PG.class);
                 mContext.startActivity(intent6);
                 break;
             case 7:
-                Intent intent7 = new Intent(mContext, PA.class);
+                Intent intent7 = new Intent(mContext, Porcentagem.class);
                 mContext.startActivity(intent7);
                 break;
             case 8:
-                Intent intent8 = new Intent(mContext, PG.class);
+                Intent intent8 = new Intent(mContext, Proporcao.class);
                 mContext.startActivity(intent8);
                 break;
 

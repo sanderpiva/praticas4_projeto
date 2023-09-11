@@ -85,11 +85,11 @@ public class Porcentagem extends AppCompatActivity {
                         if(p.op().equals("+")){
                             double resul1= 1+(p.getValor2()/100);
                             resultado.setText("Resolucao: "+p.getValor1()+" * "+"(1 +"+(p.getValor2()/100)+")"+" = "+
-                                    p.getValor1()+" + "+resul1+" = "+p.calculaPorcentagem());
+                                    p.getValor1()+" * "+resul1+" = "+p.calculaPorcentagem());
                         }else{
                             double resul2=1-(p.getValor2()/100);
                             resultado.setText("Resolucao: "+p.getValor1()+" * "+"(1 -"+(p.getValor2()/100)+")"+" = "+
-                                    p.getValor1()+" - "+resul2+" = "+p.calculaPorcentagem());
+                                    p.getValor1()+" * "+resul2+" = "+p.calculaPorcentagem());
                         }
 
                     }

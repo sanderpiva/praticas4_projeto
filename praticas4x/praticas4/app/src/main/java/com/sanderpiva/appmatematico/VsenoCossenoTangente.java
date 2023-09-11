@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class VsenoCossenoTangente extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

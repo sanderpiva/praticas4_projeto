@@ -76,19 +76,19 @@ public class Menu extends AppCompatActivity {
                         startActivity(intent4);
                         break;
                     case 5:
-                        Intent intent5 = new Intent(Menu.this, Porcentagem.class);
+                        Intent intent5 = new Intent(Menu.this, PA.class);
                         startActivity(intent5);
                         break;
                     case 6:
-                        Intent intent6 = new Intent(Menu.this, Proporcao.class);
+                        Intent intent6 = new Intent(Menu.this, PG.class);
                         startActivity(intent6);
                         break;
                     case 7:
-                        Intent intent7 = new Intent(Menu.this, PA.class);
+                        Intent intent7 = new Intent(Menu.this, Porcentagem.class);
                         startActivity(intent7);
                         break;
                     case 8:
-                        Intent intent8 = new Intent(Menu.this, PG.class);
+                        Intent intent8 = new Intent(Menu.this, Proporcao.class);
                         startActivity(intent8);
                         break;
                 }

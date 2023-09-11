@@ -14,10 +14,11 @@ public class Vproporcao extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
+        //getSupportActionBar().hide();
 
         WebView webView = findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
-        String url = "https://www.youtube.com/watch?v=PGPRh4JBIsg&list=PLqSrxnZNkzto-OybRF9TljDg3W0y2J0zH";
+        String url = "https://www.youtube.com/playlist?list=PLCXV5OW8ZZO8bpGnfT3L_G94zUysog06f";
         webView.loadUrl(url);
 
         webView.setWebViewClient(new WebViewClient() {
