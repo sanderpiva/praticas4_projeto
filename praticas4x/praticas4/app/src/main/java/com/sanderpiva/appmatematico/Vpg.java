@@ -16,7 +16,7 @@ public class Vpg extends AppCompatActivity {
 
         WebView webView = findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
-        String url = "https://www.youtube.com/watch?v=PGPRh4JBIsg&list=PLqSrxnZNkzto-OybRF9TljDg3W0y2J0zH";
+        String url = "https://www.youtube.com/watch?v=JxOhaVTkQR4&list=PLCXV5OW8ZZO-Gk8avs1WnJ-SD-8uifaLL";
         webView.loadUrl(url);
 
         webView.setWebViewClient(new WebViewClient() {

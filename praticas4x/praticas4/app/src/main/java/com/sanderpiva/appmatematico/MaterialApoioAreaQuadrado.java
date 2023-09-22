@@ -17,7 +17,7 @@ public class MaterialApoioAreaQuadrado extends AppCompatActivity {
 
         WebView webView = findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
-        String url = "https://drive.google.com/drive/folders/1sTN8Qj2P4zM_sntVYT9AQYHfDQayc9I6";
+        String url = "https://drive.google.com/drive/folders/1qvC3r76EFPR1ydsS_HQvDkW_sRCzRqbp?usp=sharing";
         webView.loadUrl(url);
 
         webView.setWebViewClient(new WebViewClient() {

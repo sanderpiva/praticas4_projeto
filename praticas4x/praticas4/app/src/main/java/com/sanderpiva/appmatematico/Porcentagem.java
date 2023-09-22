@@ -38,7 +38,7 @@ public class Porcentagem extends AppCompatActivity {
         btnPdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Porcentagem.this, MaterialApoioPitagoras.class);
+                Intent intent = new Intent(Porcentagem.this, MaterialApoioPorcentagem.class);
                 startActivity(intent);
                 // Snackbar.make(view, "Indisponivel", Snackbar.LENGTH_LONG).show();
             }

@@ -9,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class Menu extends AppCompatActivity {
 
     private android.widget.Button btn1;
@@ -59,21 +61,25 @@ public class Menu extends AppCompatActivity {
                     case 0:
                         break;
                     case 1:
-                        Intent intent1 = new Intent(Menu.this, Pitagoras.class);
-                        startActivity(intent1);
+                        //Intent intent1 = new Intent(Menu.this, Pitagoras.class);
+                        //startActivity(intent1);
+                        Snackbar.make(view, "Indisponivel para testes", Snackbar.LENGTH_LONG).show();
                         break;
                     case 2:
-                        Intent intent2 = new Intent(Menu.this, Aquadrado.class);
-                        startActivity(intent2);
+                        //Intent intent2 = new Intent(Menu.this, Aquadrado.class);
+                        //startActivity(intent2);
+                        Snackbar.make(view, "Indisponivel para testes", Snackbar.LENGTH_LONG).show();
                         break;
                     // Adicione os outros casos conforme a necessidade
                     case 3:
-                        Intent intent3 = new Intent(Menu.this, SenoCossenoTangente.class);
-                        startActivity(intent3);
+                        //Intent intent3 = new Intent(Menu.this, SenoCossenoTangente.class);
+                        //startActivity(intent3);
+                        Snackbar.make(view, "Indisponivel para testes", Snackbar.LENGTH_LONG).show();
                         break;
                     case 4:
-                        Intent intent4 = new Intent(Menu.this, PerimetroQuadrado.class);
-                        startActivity(intent4);
+                        //Intent intent4 = new Intent(Menu.this, PerimetroQuadrado.class);
+                        //startActivity(intent4);
+                        Snackbar.make(view, "Indisponivel para testes", Snackbar.LENGTH_LONG).show();
                         break;
                     case 5:
                         Intent intent5 = new Intent(Menu.this, PA.class);
@@ -84,12 +90,14 @@ public class Menu extends AppCompatActivity {
                         startActivity(intent6);
                         break;
                     case 7:
-                        Intent intent7 = new Intent(Menu.this, Porcentagem.class);
-                        startActivity(intent7);
+                        //Intent intent7 = new Intent(Menu.this, Porcentagem.class);
+                        //startActivity(intent7);
+                        Snackbar.make(view, "Indisponivel para testes", Snackbar.LENGTH_LONG).show();
                         break;
                     case 8:
-                        Intent intent8 = new Intent(Menu.this, Proporcao.class);
-                        startActivity(intent8);
+                        //Intent intent8 = new Intent(Menu.this, Proporcao.class);
+                        //startActivity(intent8);
+                        Snackbar.make(view, "Indisponivel para testes", Snackbar.LENGTH_LONG).show();
                         break;
                 }
             }

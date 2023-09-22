@@ -17,7 +17,7 @@ public class Vpa extends AppCompatActivity {
 
         WebView webView = findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
-        String url = "https://www.youtube.com/watch?v=PGPRh4JBIsg&list=PLqSrxnZNkzto-OybRF9TljDg3W0y2J0zH";
+        String url = "https://www.youtube.com/watch?v=zoFC82aPq1A&list=PLCXV5OW8ZZO9iUAnVXWkZ282zHrmhTKzJ";
         webView.loadUrl(url);
 
         webView.setWebViewClient(new WebViewClient() {

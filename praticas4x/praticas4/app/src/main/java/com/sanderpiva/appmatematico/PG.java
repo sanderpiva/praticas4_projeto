@@ -25,7 +25,7 @@ public class PG extends AppCompatActivity {
         btnVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PG.this, Vpa.class);
+                Intent intent = new Intent(PG.this, Vpg.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class PG extends AppCompatActivity {
         btnPdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PG.this, MaterialApoioPA.class);
+                Intent intent = new Intent(PG.this, MaterialApoioPG.class);
                 startActivity(intent);
                 // Snackbar.make(view, "Indisponivel", Snackbar.LENGTH_LONG).show();
             }
