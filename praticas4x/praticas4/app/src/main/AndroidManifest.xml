@@ -15,212 +15,212 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".PG"
+            android:name=".Model.PG"
             android:exported="false"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Menu" />
+                android:value=".View.Menu" />
         </activity>
 
         <activity
-            android:name=".Vpg"
+            android:name=".Model.Vpg"
             android:exported="false"
             android:label="Videos PG"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PG" />
+                android:value=".Model.PG" />
         </activity>
 
         <activity
-            android:name=".MaterialApoioPG"
+            android:name=".Model.MaterialApoioPG"
             android:exported="false"
             android:label="Material"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PG" />
+                android:value=".Model.PG" />
         </activity>
 
         <activity
-            android:name=".PA"
+            android:name=".Model.PA"
             android:exported="false"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Menu" />
+                android:value=".View.Menu" />
         </activity>
 
         <activity
-            android:name=".Vpa"
+            android:name=".Model.Vpa"
             android:exported="false"
             android:label="Videos"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PA" />
+                android:value=".Model.PA" />
         </activity>
 
         <activity
-            android:name=".MaterialApoioPA"
+            android:name=".Model.MaterialApoioPA"
             android:exported="false"
             android:label="Material"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PA" />
+                android:value=".Model.PA" />
         </activity>
 
         <activity
-            android:name=".Proporcao"
+            android:name=".Model.Proporcao"
             android:exported="false"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Menu" />
+                android:value=".View.Menu" />
         </activity>
         <activity
-            android:name=".Vproporcao"
+            android:name=".Model.Vproporcao"
             android:exported="false"
             android:label="Videos sobre proporcao">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Proporcao" />
+                android:value=".Model.Proporcao" />
         </activity>
         <activity
-            android:name=".MaterialApoioProporcao"
+            android:name=".Model.MaterialApoioProporcao"
             android:exported="false"
             android:label="@string/label_pdf_proporcao">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Proporcao" />
+                android:value=".Model.Proporcao" />
         </activity>
         <activity
-            android:name=".Porcentagem"
+            android:name=".Model.Porcentagem"
             android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Menu" />
+                android:value=".View.Menu" />
         </activity>
         <activity
-            android:name=".Vporcentagem"
+            android:name=".Model.Vporcentagem"
             android:exported="false"
             android:label="Videos sobre porcentagem">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Porcentagem" />
+                android:value=".Model.Porcentagem" />
         </activity>
         <activity
-            android:name=".MaterialApoioPorcentagem"
+            android:name=".Model.MaterialApoioPorcentagem"
             android:exported="false"
             android:label="@string/label_pdf_porcentagem">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Porcentagem" />
+                android:value=".Model.Porcentagem" />
         </activity>
         <activity
-            android:name=".Menu"
+            android:name=".View.Menu"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".SenoCossenoTangente"
+            android:name=".Model.SenoCossenoTangente"
             android:exported="false"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Menu" />
+                android:value=".View.Menu" />
         </activity>
         <activity
-            android:name=".VsenoCossenoTangente"
+            android:name=".Model.VsenoCossenoTangente"
             android:exported="false"
             android:label="Videos sobre seno cosseno tangente">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SenoCossenoTangente" />
+                android:value=".Model.SenoCossenoTangente" />
         </activity>
         <activity
-            android:name=".MaterialApoioSenoCossenoTangente"
+            android:name=".Model.MaterialApoioSenoCossenoTangente"
             android:exported="false"
             android:label="Material seno cosseno tangente">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SenoCossenoTangente" />
+                android:value=".Model.SenoCossenoTangente" />
         </activity>
         <activity
-            android:name=".PerimetroQuadrado"
+            android:name=".Model.PerimetroQuadrado"
             android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Menu" />
+                android:value=".View.Menu" />
         </activity>
         <activity
-            android:name=".MaterialApoioPerimetroQuadrado"
+            android:name=".Model.MaterialApoioPerimetroQuadrado"
             android:exported="false"
             android:label="Material perimetro quadrado">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PerimetroQuadrado" />
+                android:value=".Model.PerimetroQuadrado" />
         </activity>
         <activity
-            android:name=".VperimetroQuadrado"
+            android:name=".Model.VperimetroQuadrado"
             android:exported="false"
             android:label="Videos sobre perimetro do quadrado">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PerimetroQuadrado" />
+                android:value=".Model.PerimetroQuadrado" />
         </activity>
         <activity
-            android:name=".VareaQuadrado"
+            android:name=".Model.VareaQuadrado"
             android:exported="false"
             android:label="@string/label_video_area_quadrado">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Aquadrado" />
+                android:value=".Model.Aquadrado" />
         </activity>
         <activity
-            android:name=".Aquadrado"
+            android:name=".Model.Aquadrado"
             android:exported="false"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Menu" />
+                android:value=".View.Menu" />
         </activity>
         <activity
-            android:name=".MaterialApoioAreaQuadrado"
+            android:name=".Model.MaterialApoioAreaQuadrado"
             android:exported="false"
             android:label="@string/label_pdf_area_quadrado">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Aquadrado" />
+                android:value=".Model.Aquadrado" />
         </activity>
         <activity
-            android:name=".Pitagoras"
+            android:name=".Model.Pitagoras"
             android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Menu" />
+                android:value=".View.Menu" />
         </activity>
         <activity
-            android:name=".Vpitagoras"
+            android:name=".Model.Vpitagoras"
             android:exported="false"
             android:label="@string/label_video_pitagoras">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Pitagoras" />
+                android:value=".Model.Pitagoras" />
         </activity>
         <activity
-            android:name=".MaterialApoioPitagoras"
+            android:name=".Model.MaterialApoioPitagoras"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Pitagoras" />
+                android:value=".Model.Pitagoras" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="WrongManifestParent">
