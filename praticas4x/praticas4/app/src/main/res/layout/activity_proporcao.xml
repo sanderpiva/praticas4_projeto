@@ -139,8 +139,9 @@
             android:id="@+id/textViewResultadoPr"
             android:layout_width="146dp"
             android:layout_height="45dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="60dp"
             android:layout_marginEnd="12dp"
+            android:text="D = ?"
             android:textAlignment="viewEnd"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -201,7 +202,7 @@
             android:layout_width="375dp"
             android:layout_height="56dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="39dp"
             android:layout_marginEnd="16dp"
             android:text="Resultado"
             android:textSize="20sp"
@@ -227,10 +228,21 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="D?"
+            android:text="D"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextValor2a" />
+
+        <TextView
+            android:id="@+id/textViewLegenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCalcularProporcao" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

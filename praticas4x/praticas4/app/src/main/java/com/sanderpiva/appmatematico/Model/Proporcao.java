@@ -13,7 +13,7 @@ import com.sanderpiva.appmatematico.R;
 public class Proporcao extends AppCompatActivity {
 
     private android.widget.EditText a, b, c;
-    private android.widget.TextView resultado, desc;
+    private android.widget.TextView resultado, desc, legenda;
     private android.widget.Button btncalcular;
 
     @Override
@@ -46,6 +46,7 @@ public class Proporcao extends AppCompatActivity {
         b = findViewById(R.id.editTextValor2a);
         c = findViewById(R.id.editTextValor1b);
         resultado = findViewById(R.id.textViewResultadoPr);
+        legenda = findViewById(R.id.textViewLegenda);
         desc = findViewById(R.id.textViewDescResultadoProporcao);
         android.widget.Button btncalcular = findViewById(R.id.buttonCalcularProporcao);
 
@@ -61,10 +62,10 @@ public class Proporcao extends AppCompatActivity {
                 }else{
                     ProcessaProporcao p = new ProcessaProporcao(resA, resB, resC);
                     //resultado.setText(String.valueOf(p.calculaProporcao()));
-                    resultado.setText(String.format("%.2f", p.calculaProporcao()));
-                    desc.setText("D*"+p.getV1()+" = "+p.getV3()+ "*"+p.getV2()+"=> D = "+
-                            "("+p.getV3()+" * "+p.getV2()+")"+"/"+p.getV1()+" = "
-                    +(p.getV3()*p.getV2())+" / "+p.getV1()+" = "+p.calculaProporcao());
+                    legenda.setText("A = "+p.getV1()+", "+"B = "+p.getV2()+", "+"C = "+p.getV3()+", "+"D = ?");
+                    resultado.setText("D = "+p.calculaProporcao());
+                    desc.setText("D*"+p.getV1()+" = "+p.getV3()+ "*"+p.getV2()+" -> D*"+p.getV1()+" = "+
+                    (p.getV3()*p.getV2())+ " -> "+"D = "+(p.getV3()*p.getV2())+"/"+p.getV1()+" = "+p.calculaProporcao());
                     /*
                     desc.setText(String.format("C: (%.2f) * B: (%.2f) / A: (%.2f) = %.2f / %.2f = %.2f",
                             p.getV3(), p.getV2(), p.getV1(),
@@ -74,8 +75,5 @@ public class Proporcao extends AppCompatActivity {
                 }
             }
         });
-
-        //
-
     }
 }
