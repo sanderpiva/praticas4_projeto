@@ -13,7 +13,7 @@ import com.sanderpiva.appmatematico.R;
 public class Proporcao extends AppCompatActivity {
 
     private android.widget.EditText a, b, c;
-    private android.widget.TextView resultado, desc, legenda;
+    private android.widget.TextView resultado, desc, legenda, legenda2;
     private android.widget.Button btncalcular;
 
     @Override
@@ -47,6 +47,7 @@ public class Proporcao extends AppCompatActivity {
         c = findViewById(R.id.editTextValor1b);
         resultado = findViewById(R.id.textViewResultadoPr);
         legenda = findViewById(R.id.textViewLegenda);
+        legenda2 = findViewById(R.id.textViewLegenda2);
         desc = findViewById(R.id.textViewDescResultadoProporcao);
         android.widget.Button btncalcular = findViewById(R.id.buttonCalcularProporcao);
 
@@ -63,6 +64,7 @@ public class Proporcao extends AppCompatActivity {
                     ProcessaProporcao p = new ProcessaProporcao(resA, resB, resC);
                     //resultado.setText(String.valueOf(p.calculaProporcao()));
                     legenda.setText("A = "+p.getV1()+", "+"B = "+p.getV2()+", "+"C = "+p.getV3()+", "+"D = ?");
+                    legenda2.setText("D*A = C*B");
                     resultado.setText("D = "+p.calculaProporcao());
                     desc.setText("D*"+p.getV1()+" = "+p.getV3()+ "*"+p.getV2()+" -> D*"+p.getV1()+" = "+
                     (p.getV3()*p.getV2())+ " -> "+"D = "+(p.getV3()*p.getV2())+"/"+p.getV1()+" = "+p.calculaProporcao());
