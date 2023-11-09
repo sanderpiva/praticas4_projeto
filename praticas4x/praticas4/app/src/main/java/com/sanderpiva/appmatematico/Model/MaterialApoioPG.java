@@ -12,7 +12,6 @@ import com.sanderpiva.appmatematico.R;
 
 public class MaterialApoioPG extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

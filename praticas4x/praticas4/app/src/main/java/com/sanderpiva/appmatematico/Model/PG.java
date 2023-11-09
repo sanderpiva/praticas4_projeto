@@ -15,7 +15,6 @@ public class PG extends AppCompatActivity {
 
     private android.widget.EditText a1, nMenosUm, q;
     private android.widget.TextView resultadoAn;
-    private android.widget.Button btncalcular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -36,18 +36,16 @@ public class PerimetroQuadrado extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(PerimetroQuadrado.this, MaterialApoioPerimetroQuadrado.class);
                 startActivity(intent);
-                //Snackbar.make(view, "Indisponivel", Snackbar.LENGTH_LONG).show();
+
             }
         });
 
         EditText ladoQuadrado = findViewById(R.id.editTextLadoPerimetroQuadrado);
         Button btnCalcula = findViewById(R.id.btnCalculaPerimetroQuadrado);
         TextView resultadoPerimetroQuadrado = findViewById(R.id.textViewResultadoPerimetroQuadrado);
-        //TextView comentario = findViewById(R.id.textViewComentarioAreaQuadrado);
 
         btnCalcula.setOnClickListener(view -> {
             String ladoQuadradoString = ladoQuadrado.getText().toString();
-            //String comentarioAreaQuadrado = comentario.getText().toString();
 
             if(ladoQuadradoString.isEmpty()||ladoQuadradoString.equals("0")){
 
@@ -55,9 +53,8 @@ public class PerimetroQuadrado extends AppCompatActivity {
             }
             else{
                 ProcessaPerimetroQuadrado pq = new ProcessaPerimetroQuadrado(ladoQuadradoString);
-                //resultadoPerimetroQuadrado.setText("Perimetro do quadrado: "+"4 x lado = 4 x "+ladoQuadradoString+"= "+pq.resultadoPerimetroQuadrado()+"unidades");
                 resultadoPerimetroQuadrado.setText("Perímetro do quadrado: 4 x lado = 4 x " + ladoQuadradoString + " = " + pq.resultadoPerimetroQuadrado() + " unidades");
-                //comentario.setText(R.string.comentario);
+
             }
         });
     }

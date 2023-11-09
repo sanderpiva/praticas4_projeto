@@ -12,16 +12,13 @@ import com.sanderpiva.appmatematico.R;
 
 public class Porcentagem extends AppCompatActivity {
 
-    //private Button btnPDF;
     private android.widget.EditText valor1, valor2, op;
     private android.widget.TextView resultado;
-    private android.widget.Button btncalcular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_porcentagem);
-        //getSupportActionBar().hide();
 
         Button btnVideo = (Button) findViewById(R.id.btnVideoPorcentagem);
         btnVideo.setOnClickListener(new View.OnClickListener() {
@@ -38,7 +35,7 @@ public class Porcentagem extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Porcentagem.this, MaterialApoioPorcentagem.class);
                 startActivity(intent);
-                // Snackbar.make(view, "Indisponivel", Snackbar.LENGTH_LONG).show();
+
             }
         });
 
@@ -74,11 +71,6 @@ public class Porcentagem extends AppCompatActivity {
                         Snackbar.make(layoutPorcentagem, "Verifique se o sinal do seu operador foi digitado corretamente", Snackbar.LENGTH_SHORT).show();
 
                     }else{
-                        /*resultado.setText("Resolucao: "+p.getValor1()+" "+" "+p.op()+
-                                " ("+p.getValor1() +"*" +p.getValor2()+")"+"/ 100"+" = "
-                                +p.getValor1()+" "+" "+p.op()+" "+"("+res+")"+"/ 100"+" = "+
-                                p.getValor1()+" "+p.op()+" "+res2+" = "+p.calculaPorcentagem());*/
-
 
                         if(p.op().equals("+")){
                             double resul1= 1+(p.getValor2()/100);

@@ -20,7 +20,6 @@ public class Proporcao extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proporcao);
-        //getSupportActionBar().hide();
 
         Button btnVideo = (Button) findViewById(R.id.btnVideoProporcao);
         btnVideo.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +36,6 @@ public class Proporcao extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Proporcao.this, MaterialApoioProporcao.class);
                 startActivity(intent);
-                // Snackbar.make(view, "Indisponivel", Snackbar.LENGTH_LONG).show();
             }
         });
 
@@ -62,17 +60,20 @@ public class Proporcao extends AppCompatActivity {
                     Snackbar.make(layoutProporcao, "Preencha todos os dados", Snackbar.LENGTH_SHORT).show();
                 }else{
                     ProcessaProporcao p = new ProcessaProporcao(resA, resB, resC);
-                    //resultado.setText(String.valueOf(p.calculaProporcao()));
                     legenda.setText("A = "+p.getV1()+", "+"B = "+p.getV2()+", "+"C = "+p.getV3()+", "+"D = ?");
                     legenda2.setText("D*A = C*B");
-                    resultado.setText("D = "+p.calculaProporcao());
-                    desc.setText("D*"+p.getV1()+" = "+p.getV3()+ "*"+p.getV2()+" -> D*"+p.getV1()+" = "+
-                    (p.getV3()*p.getV2())+ " -> "+"D = "+(p.getV3()*p.getV2())+"/"+p.getV1()+" = "+p.calculaProporcao());
-                    /*
-                    desc.setText(String.format("C: (%.2f) * B: (%.2f) / A: (%.2f) = %.2f / %.2f = %.2f",
-                            p.getV3(), p.getV2(), p.getV1(),
-                            p.getV3() * p.getV2(), p.getV1(),
-                            p.calculaProporcao()));*/
+                    resultado.setText(String.format("D = %.2f", p.calculaProporcao()));
+                    desc.setText(String.format(
+                            "D*%.2f = %.2f * %.2f -> D*%.2f = %.2f -> D = %.2f / %.2f = %.2f",
+                            p.getV1(),
+                            p.getV3(),
+                            p.getV2(),
+                            p.getV1(),
+                            (p.getV3() * p.getV2()),
+                            (p.getV3() * p.getV2()),
+                            p.getV1(),
+                            p.calculaProporcao()
+                    ));
 
                 }
             }

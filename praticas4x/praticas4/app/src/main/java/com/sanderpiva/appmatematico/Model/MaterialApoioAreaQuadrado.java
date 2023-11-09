@@ -11,7 +11,6 @@ import com.sanderpiva.appmatematico.R;
 
 public class MaterialApoioAreaQuadrado extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

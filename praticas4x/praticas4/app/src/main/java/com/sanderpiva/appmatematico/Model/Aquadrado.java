@@ -23,12 +23,6 @@ import java.text.DecimalFormat;
 
 public class Aquadrado extends AppCompatActivity {
 
-    /*@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aquadrado);
-    }*/
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -108,7 +102,6 @@ public class Aquadrado extends AppCompatActivity {
 
         btnCalcula.setOnClickListener(view -> {
             String ladoQuadradoString = ladoQuadrado.getText().toString();
-            String comentarioAreaQuadrado = comentario.getText().toString();
 
             if(ladoQuadradoString.isEmpty()||ladoQuadradoString.equals("0")){
 

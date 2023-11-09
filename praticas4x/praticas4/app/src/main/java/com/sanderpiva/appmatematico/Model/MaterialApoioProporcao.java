@@ -21,8 +21,6 @@ public class MaterialApoioProporcao extends AppCompatActivity {
         WebView webView = findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
         String url = "https://drive.google.com/drive/folders/1n0XJK4q7tgtiqVZ3vLvXAt8zhsavQp38?usp=sharing";
-        //https://drive.google.com/drive/folders/1F0RktWr6eyNGVEv_8vhXO1y3Vg-L8HSI
-        //https://drive.google.com/drive/folders/1n0XJK4q7tgtiqVZ3vLvXAt8zhsavQp38?usp=sharing
         webView.loadUrl(url);
 
         webView.setWebViewClient(new WebViewClient() {
